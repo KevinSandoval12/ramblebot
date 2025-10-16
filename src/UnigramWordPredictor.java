@@ -112,7 +112,7 @@ public class UnigramWordPredictor implements WordPredictor {
 
     String current = context.get(context.size() -1 );
     List<String> currentList = neighborMap.get(current);
-    int randomNumber = (int)(Math.random() * context.size());
+    int randomNumber = (int)(Math.random() * currentList.size());
     
 
 
